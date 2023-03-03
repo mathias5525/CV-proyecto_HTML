@@ -30,7 +30,7 @@ html{
 .inicio .contenido-seccion header nav{
     position: fixed;
     margin-left: 60px;
-    background-color: #940253;
+    background-color: #2d0d86;
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -48,7 +48,7 @@ html{
 
 .inicio .contenido-seccion header .nav-bar{
     position: fixed;
-    background-color: #940253;
+    background-color: #2d0d86;
     font-size: 20px;
     width: 50px;
     height: 50px;
@@ -80,7 +80,7 @@ html{
 .inicio .contenido-seccion .foto img{
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #940253;
+    border: 5px solid #d8d7db;
     position: absolute;
     left: 50%;
     top: -100px;
@@ -107,14 +107,14 @@ html{
     font-size: 30px;
 }
 .sobremi .contenido-seccion .especial{
-    color: #940253;
+    color: #2d0d86;
     font-weight: bold;
     margin-top: 15px;
 }
 .sobremi .contenido-seccion p{
     max-width: 700px;
     margin: auto;
-    color: #666;
+    color: #666666;
 }
 .sobremi .contenido-seccion .fila{
     display: flex;
@@ -125,11 +125,11 @@ html{
     width: 30%;
 }
 .sobremi .contenido-seccion .fila .col i{
-    color: #940253;
+    color: #2d0d86;
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 2px solid #940253;
+    border: 2px solid #2d0d86;
     line-height: 40px;
     border-radius: 50%;
 }
@@ -142,12 +142,12 @@ html{
 .habilidades{
     padding: 80px 0 100px 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("https://www.ainia.es/wp-content/uploads/2021/12/tecnologia-2-1700x555.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    color: #fff;
+    color: #d3c2ee;
 }
 .habilidades .contenido-seccion{
     max-width: 1000px;
@@ -210,9 +210,9 @@ html{
 }
 .resumen .contenido-seccion .info .col .titulo{
     display: inline-block;
-    color: #940253;
+    color: #2d0d86;
     font-weight: bold;
-    border: 2px solid #940253;
+    border: 2px solid #2d0d86;
     padding: 10px;
 
 }
@@ -263,7 +263,65 @@ html{
     margin-top: 50px;
 }
 .contacto .contenido-seccion .fila .col h2{
-    color: #940253;
+    color: #d7d2e6;
+}
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+   padding-left: 30px; 
+}
+
+input{
+	
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	width: 420px;   
+  cursor: pointer;
+}
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:800px){
@@ -306,7 +364,7 @@ html{
 }
 
 @media print and (max-width:800px){
-    header, footer, nav, aside, .habilidades, .contacto {
+    header, footer, nav, aside, .habilidades, .contacto, .contact_form {
         display: none;
       }
       
