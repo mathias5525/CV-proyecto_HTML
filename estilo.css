@@ -91,7 +91,7 @@ html{
     font-family: "Yellowtail";
     font-size: 1.5rem;
 }
-/* SECCION SOBRE MI */
+/* SECCION DATOS PERSONALES */
 .sobremi{
     background-color: #e6e6e6;
     padding: 140px 0 100px 0;
@@ -187,7 +187,7 @@ html{
 /* SECCION RESUMEN */
 .resumen{
     background-color: #e6e6e6;
-    padding: 140px 0 100px 0;
+    padding: 80px 0 80px 0;
     text-align: center;
 }
 .resumen .contenido-seccion{
@@ -242,7 +242,7 @@ html{
 /* SECCION CONTACTO */
 .contacto{
     background-color: #202020;
-    padding: 140px 0 100px 0;
+    padding: 80px 0 80px 0;
     color: #e6e6e6;
     text-align: center;
 }
@@ -265,64 +265,56 @@ html{
 .contacto .contenido-seccion .fila .col h2{
     color: #d7d2e6;
 }
-
-.contact_form{	
-	width: 460px; 
-  height: auto;
-  margin: 80px auto;
-	border-radius: 10px;  
-	padding-top: 30px;
-	padding-bottom: 20px;  
-   padding-left: 30px; 
+/* FORMULARIO */
+.contact_form{
+    padding: 80px 0 80px 0;
+    background: #e6e6e6;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
 }
-
-input{
-	
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
+form{
+    padding: 80px 0 80px 0;;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1.5px solid #2d0d86;
+    border-radius: 5px;
 }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 80%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #2d0d86;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #2d0d86;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2d0d86;
+  }
 
-textarea{
-  background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
-}
-
-label{
-  display: block; 
-	float: center; 	
-}
-
-button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	text-transform: uppercase;
-	width: 420px;   
-  cursor: pointer;
-}
-
-.aviso{
-	font-size: 13px;  
-	color: #0e0e0e;  
-}
 /* SECCION RESPONSIVE */
 @media screen and (max-width:800px){
     .habilidades .contenido-seccion .fila{
@@ -361,10 +353,13 @@ button{
     .contacto .contenido-seccion .fila{
         display: block;
     }
+    .contacto .contact_form{
+        display: block
+    }
 }
 
 @media print and (max-width:800px){
-    header, footer, nav, aside, .habilidades, .contacto, .contact_form {
+    header, footer, nav, aside, .habilidades, .contact_form {
         display: none;
       }
       
